@@ -21,9 +21,9 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
-        <div className="w-full pt-20 pb-16 lg:pt-0 lg:pb-0 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="w-full pt-20 pb-24 sm:pb-20 lg:pt-0 lg:pb-0 grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Text */}
-          <div className="text-white space-y-8">
+          <div className="text-white space-y-6 sm:space-y-8">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-sm font-medium">
               <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />

@@ -21,7 +21,7 @@ const services = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1e2e1b] text-white">
+    <footer className="bg-[#1e2e1b] text-white pb-20 md:pb-0">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -46,7 +46,7 @@ export default function Footer() {
                 href="https://www.instagram.com/doktortakvimi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white transition-colors"
+                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white transition-colors"
                 aria-label="Instagram"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ export default function Footer() {
                 href="https://wa.me/905388371509"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-[#25D366] hover:text-white transition-colors"
+                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-[#25D366] hover:text-white transition-colors"
                 aria-label="WhatsApp"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function Footer() {
               </a>
               <a
                 href="tel:+905388371509"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white transition-colors"
+                className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center text-white/70 hover:bg-primary hover:text-white transition-colors"
                 aria-label="Telefon"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

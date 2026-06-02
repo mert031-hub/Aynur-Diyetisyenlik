@@ -114,7 +114,7 @@ export default function Services() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute bottom-3 left-3 text-2xl">{service.icon}</div>
+                <div className="absolute bottom-3 left-3 text-2xl" aria-hidden="true">{service.icon}</div>
               </div>
               {/* Text */}
               <div className="p-5">

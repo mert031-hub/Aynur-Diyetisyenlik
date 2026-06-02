@@ -91,12 +91,13 @@ export default function Navbar() {
             </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`lg:hidden p-2 rounded-lg transition-colors ${
+              className={`lg:hidden p-2.5 rounded-lg transition-colors ${
                 isScrolled
                   ? 'text-text hover:bg-background-alt'
                   : 'text-white hover:bg-white/10'
               }`}
               aria-label="Menüyü aç/kapat"
+              aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
             </button>

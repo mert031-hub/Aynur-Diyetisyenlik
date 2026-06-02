@@ -45,17 +45,17 @@ export default function TrustBar() {
   return (
     <section className="bg-white border-b border-gray-100 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {trustItems.map((item, i) => (
             <div
               key={i}
               className="flex items-start gap-4 group"
             >
-              <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+              <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary transition-colors group-hover:bg-primary group-hover:text-white">
                 {item.icon}
               </div>
               <div>
-                <div className="font-heading font-bold text-xl text-text">{item.value}</div>
+                <div className="font-heading font-bold text-lg sm:text-xl text-text">{item.value}</div>
                 <div className="text-sm font-semibold text-text mt-0.5">{item.label}</div>
                 <div className="text-xs text-text-muted mt-0.5">{item.sub}</div>
               </div>

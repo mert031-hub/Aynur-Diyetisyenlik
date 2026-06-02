@@ -73,6 +73,7 @@ export default function FAQ() {
                 className="w-full flex items-start gap-4 px-6 py-5 text-left"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 aria-expanded={openIndex === i}
+                aria-controls={`faq-answer-${i}`}
               >
                 <div
                   className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-colors ${
@@ -99,6 +100,7 @@ export default function FAQ() {
                 </span>
               </button>
               <div
+                id={`faq-answer-${i}`}
                 className={`faq-answer px-6 ${openIndex === i ? 'open pb-5' : ''}`}
               >
                 <p className="text-text-muted leading-relaxed pl-10">{faq.a}</p>

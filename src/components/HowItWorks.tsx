@@ -62,7 +62,7 @@ export default function HowItWorks() {
           {/* Vertical line desktop */}
           <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary/30 via-primary/20 to-transparent -translate-x-1/2" />
 
-          <div className="space-y-16 lg:space-y-24">
+          <div className="space-y-12 sm:space-y-16 lg:space-y-24">
             {steps.map((step, i) => (
               <div
                 key={i}
@@ -79,7 +79,7 @@ export default function HowItWorks() {
                     <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                     {step.tag}
                   </div>
-                  <div className="font-heading font-black text-7xl text-primary/10 leading-none mb-2">
+                  <div className="font-heading font-black text-5xl sm:text-7xl text-primary/10 leading-none mb-2">
                     {step.number}
                   </div>
                   <h3 className="font-heading font-bold text-xl lg:text-2xl text-text mb-3">
@@ -104,6 +104,7 @@ export default function HowItWorks() {
                       width={400}
                       height={300}
                       className="object-cover w-full h-56 transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, 400px"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>

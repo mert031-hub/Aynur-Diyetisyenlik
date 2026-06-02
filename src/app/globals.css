@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   font-family: var(--font-inter), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Scroll offset for fixed navbar */
@@ -31,10 +33,9 @@ body {
 /* Intersection observer animations */
 .reveal {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -42,10 +43,9 @@ body {
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal-left.visible {
   opacity: 1;
   transform: translateX(0);
@@ -53,10 +53,9 @@ body {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal-right.visible {
   opacity: 1;
   transform: translateX(0);
@@ -70,16 +69,9 @@ body {
 .delay-500 { transition-delay: 500ms; }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #FAF9F7;
-}
-::-webkit-scrollbar-thumb {
-  background: #A8B89A;
-  border-radius: 3px;
-}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #FAF9F7; }
+::-webkit-scrollbar-thumb { background: #A8B89A; border-radius: 3px; }
 
 /* FAQ accordion */
 .faq-answer {
@@ -87,9 +79,8 @@ body {
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
 }
-
 .faq-answer.open {
-  max-height: 500px;
+  max-height: 600px;
 }
 
 /* Card hover */
@@ -101,19 +92,6 @@ body {
   box-shadow: 0 16px 40px rgba(124, 154, 117, 0.15);
 }
 
-/* Image overlay */
-.img-overlay {
-  position: relative;
-  overflow: hidden;
-}
-.img-overlay::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(47,47,47,0.4) 100%);
-  pointer-events: none;
-}
-
 /* WhatsApp pulse */
 @keyframes pulse-green {
   0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
@@ -123,9 +101,9 @@ body {
   animation: pulse-green 2s infinite;
 }
 
-/* Sticky CTA bar on mobile */
-@media (min-width: 768px) {
-  .mobile-sticky-cta {
-    display: none;
-  }
+/* Accessibility: keyboard focus rings */
+:focus-visible {
+  outline: 2px solid #7C9A75;
+  outline-offset: 3px;
+  border-radius: 4px;
 }

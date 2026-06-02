@@ -130,6 +130,7 @@ export default function WhyUs() {
                 alt="Beslenme danışmanlığı"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1280px) 0px, 288px"
               />
             </div>
             <div className="absolute bottom-0 left-0 w-64 h-72 rounded-3xl overflow-hidden shadow-xl">
@@ -138,6 +139,7 @@ export default function WhyUs() {
                 alt="Sağlıklı sebzeler"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1280px) 0px, 256px"
               />
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
@@ -146,6 +148,7 @@ export default function WhyUs() {
                 alt="Su ve sağlık"
                 fill
                 className="object-cover"
+                sizes="(max-width: 1280px) 0px, 208px"
               />
             </div>
             {/* Floating stat */}
