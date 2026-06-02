@@ -18,7 +18,7 @@ export default function About() {
             {/* Main image */}
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/dograma.jpg"
+                src="/images/diyetkadin2.jpg"
                 alt="Aynur Kazak - Uzman Diyetisyen"
                 width={600}
                 height={700}
