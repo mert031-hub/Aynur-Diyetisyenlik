@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
+import imgOg from '../../images/diyetkadin.jpg';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
       'Kişisel beslenme programları ve bilimsel yaklaşımla sürdürülebilir sağlıklı yaşam. Afyonkarahisar\'ın en güvenilir diyetisyen kliniği.',
     images: [
       {
-        url: '/images/diyetkadin.jpg',
+        url: imgOg.src,
         width: 1200,
         height: 630,
         alt: 'Aynur Kazak Diyetisyen',
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Aynur Kazak | Uzman Diyetisyen – Afyonkarahisar',
     description: 'Kişisel beslenme programları ile sağlıklı ve sürdürülebilir bir yaşam için uzman diyetisyen danışmanlığı.',
-    images: ['/images/diyetkadin.jpg'],
+    images: [imgOg.src],
   },
   robots: {
     index: true,
@@ -101,7 +102,7 @@ const jsonLd = {
     bestRating: '5',
   },
   priceRange: '₺₺',
-  image: 'https://aynurkazakdiyetisyen.com/images/diyetkadin.jpg',
+  image: `https://aynurkazakdiyetisyen.com${imgOg.src}`,
 };
 
 export default function RootLayout({

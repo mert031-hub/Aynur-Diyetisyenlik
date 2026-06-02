@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import imgHeroBg from '../../images/diyetkadin.jpg';
+import imgHeroCard from '../../images/healthymeal2.jpg';
 
 export default function Hero() {
   return (
@@ -6,7 +8,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/diyetkadin.jpg"
+          src={imgHeroBg}
           alt="Aynur Kazak Uzman Diyetisyen"
           fill
           priority
@@ -98,7 +100,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-80 xl:w-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 bg-gray-100">
                 <Image
-                  src="/images/healthymeal2.jpg"
+                  src={imgHeroCard}
                   alt="Sağlıklı beslenme"
                   width={400}
                   height={500}

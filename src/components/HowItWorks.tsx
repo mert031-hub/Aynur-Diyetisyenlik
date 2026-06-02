@@ -1,39 +1,45 @@
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+import imgGulensurat from '../../images/gülensurat.jpg';
+import imgMezuralikadin from '../../images/mezuralikadin.jpg';
+import imgDiyetphoto from '../../images/diyetphoto.jpg';
+import imgSaglikliyemek from '../../images/saglikliyemek.jpg';
+import imgHealthymeal2 from '../../images/healthymeal2.jpg';
 
-const steps = [
+const steps: { number: string; title: string; desc: string; image: StaticImageData; tag: string }[] = [
   {
     number: '01',
     title: 'İlk Görüşme',
     desc: 'Sağlık geçmişiniz, alışkanlıklarınız ve hedefleriniz hakkında kapsamlı bir değerlendirme yapıyoruz. Bu görüşme, size en uygun yolu belirlemek için temel oluşturur.',
-    image: '/images/g%C3%BClensurat.jpg',
+    image: imgGulensurat,
     tag: 'Ücretsiz',
   },
   {
     number: '02',
     title: 'Vücut Analizi ve Değerlendirme',
     desc: 'Metabolizmanız, vücut kompozisyonunuz ve kan değerleriniz analiz edilerek sağlık tablonuz bütüncül bir şekilde değerlendirilir.',
-    image: '/images/mezural%C4%B1%20kad%C4%B1n%20.jpg',
+    image: imgMezuralikadin,
     tag: 'Kişisel',
   },
   {
     number: '03',
     title: 'Kişisel Beslenme Planı',
     desc: 'Tüm veriler ışığında, yaşam tarzınıza uygun, pratik ve sürdürülebilir beslenme programınız hazırlanır.',
-    image: '/images/diyet%20photo.jpg',
+    image: imgDiyetphoto,
     tag: 'Özel',
   },
   {
     number: '04',
     title: 'Takip ve İlerleme',
     desc: 'Düzenli kontrol görüşmeleriyle ilerlemeniz izlenir, programınız güncellenir ve motivasyonunuz korunur.',
-    image: '/images/saglikliyemek.jpg',
+    image: imgSaglikliyemek,
     tag: 'Sürekli',
   },
   {
     number: '05',
     title: 'Sürdürülebilir Sağlıklı Yaşam',
     desc: 'Hedeflerinize ulaştıktan sonra sağlıklı alışkanlıklarınızı kalıcı hale getirerek yaşam kalitenizi sürekli yüksek tutarsınız.',
-    image: '/images/healthymeal2.jpg',
+    image: imgHealthymeal2,
     tag: 'Kalıcı',
   },
 ];

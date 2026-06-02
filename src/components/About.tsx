@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import imgAboutMain from '../../images/diyetkadin2.jpg';
+import imgAboutAccent from '../../images/saglikliyemek.jpg';
 
 const qualities = [
   'Kişiselleştirilmiş beslenme planları',
@@ -18,7 +20,7 @@ export default function About() {
             {/* Main image */}
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
               <Image
-                src="/images/diyetkadin2.jpg"
+                src={imgAboutMain}
                 alt="Aynur Kazak - Uzman Diyetisyen"
                 width={600}
                 height={700}
@@ -46,7 +48,7 @@ export default function About() {
             {/* Small accent image — hidden on xs to prevent overflow */}
             <div className="hidden sm:block absolute top-8 -right-4 lg:-right-10 z-20 w-28 h-28 rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-gray-100">
               <Image
-                src="/images/saglikliyemek.jpg"
+                src={imgAboutAccent}
                 alt="Sağlıklı beslenme"
                 width={120}
                 height={120}

@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import imgDograma from '../../images/dograma.jpg';
+import imgBuzdolabi from '../../images/buzdolabi.jpg';
+import imgSu2 from '../../images/su2.jpg';
 
 const advantages = [
   {
@@ -126,7 +129,7 @@ export default function WhyUs() {
           <div className="relative h-[600px] reveal-right hidden lg:block">
             <div className="absolute top-0 right-0 w-72 h-80 rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
               <Image
-                src="/images/dograma.jpg"
+                src={imgDograma}
                 alt="Beslenme danışmanlığı"
                 fill
                 loading="lazy"
@@ -136,7 +139,7 @@ export default function WhyUs() {
             </div>
             <div className="absolute bottom-0 left-0 w-64 h-72 rounded-3xl overflow-hidden shadow-xl bg-gray-100">
               <Image
-                src="/images/buzdolabi.jpg"
+                src={imgBuzdolabi}
                 alt="Sağlıklı sebzeler"
                 fill
                 loading="lazy"
@@ -146,7 +149,7 @@ export default function WhyUs() {
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-gray-100">
               <Image
-                src="/images/su2.jpg"
+                src={imgSu2}
                 alt="Su ve sağlık"
                 fill
                 loading="lazy"

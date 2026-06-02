@@ -1,77 +1,90 @@
 import Image from 'next/image';
+import { StaticImageData } from 'next/image';
+import imgMezuralikadin from '../../images/mezuralikadin.jpg';
+import imgSaglikliyemek from '../../images/saglikliyemek.jpg';
+import imgDiyetphoto from '../../images/diyetphoto.jpg';
+import imgTabak from '../../images/tabak.jpg';
+import imgDiyetkadin2 from '../../images/diyetkadin2.jpg';
+import imgMeyve from '../../images/meyve.jpg';
+import imgHealthymeal from '../../images/healthymeal.jpg';
+import imgSaglikliekmek from '../../images/saglikliekmek.jpg';
+import imgDiyetkadin from '../../images/diyetkadin.jpg';
+import imgSu from '../../images/su.jpg';
+import imgMutfak from '../../images/mutfak.jpg';
+import imgSaglikliyemek2 from '../../images/saglikliyemek2.jpg';
 
-const services = [
+const services: { icon: string; title: string; desc: string; image: StaticImageData }[] = [
   {
     icon: '⚖️',
     title: 'Kilo Verme Programı',
     desc: 'Metabolizmanıza özel, sürdürülebilir ve sağlıklı kilo verme planları.',
-    image: '/images/mezural%C4%B1%20kad%C4%B1n%20.jpg',
+    image: imgMezuralikadin,
   },
   {
     icon: '💪',
     title: 'Kilo Alma Programı',
     desc: 'Kas kütlesi artırma ve sağlıklı kilo alımı için bilimsel beslenme planları.',
-    image: '/images/saglikliyemek.jpg',
+    image: imgSaglikliyemek,
   },
   {
     icon: '🩺',
     title: 'Obezite Yönetimi',
     desc: 'Medikal destekli, kapsamlı obezite tedavisi ve yaşam tarzı değişimi.',
-    image: '/images/diyetphoto.jpg',
+    image: imgDiyetphoto,
   },
   {
     icon: '🩸',
     title: 'Diyabet Diyeti',
     desc: 'Tip 1 ve Tip 2 diyabet için kan şekerini dengeleyen özel beslenme programları.',
-    image: '/images/tabak.jpg',
+    image: imgTabak,
   },
   {
     icon: '📊',
     title: 'İnsülin Direnci',
     desc: 'İnsülin direncini ve metabolik sendromu kontrol altına alan bilimsel diyetler.',
-    image: '/images/diyetkadin2.jpg',
+    image: imgDiyetkadin2,
   },
   {
     icon: '🤰',
     title: 'Gebelik Beslenmesi',
     desc: 'Anne ve bebek sağlığını koruyacak, güvenli gebelik beslenme programları.',
-    image: '/images/meyve.jpg',
+    image: imgMeyve,
   },
   {
     icon: '🏃',
     title: 'Sporcu Beslenmesi',
     desc: 'Performansı artıran, toparlanmayı hızlandıran sporcu beslenme planları.',
-    image: '/images/healthymeal.jpg',
+    image: imgHealthymeal,
   },
   {
     icon: '👶',
     title: 'Çocuk & Bebek Beslenmesi',
     desc: 'Büyüme ve gelişim için çocuk ve adölesan beslenme danışmanlığı.',
-    image: '/images/saglikliekmek.jpg',
+    image: imgSaglikliekmek,
   },
   {
     icon: '🧬',
     title: 'Metabolik Hastalıklar',
     desc: 'Hiperlipidemi, gut hastalığı ve diğer metabolik rahatsızlıklarda uzman destek.',
-    image: '/images/diyetkadin.jpg',
+    image: imgDiyetkadin,
   },
   {
     icon: '❤️',
     title: 'Kalp & Damar Sağlığı',
     desc: 'Kardiyovasküler hastalıklarda koruyucu ve tedavi edici beslenme planları.',
-    image: '/images/su.jpg',
+    image: imgSu,
   },
   {
     icon: '🌿',
     title: 'Sağlıklı Yaşam Koçluğu',
     desc: 'Bütüncül yaklaşımla sağlıklı alışkanlıklar edinme ve yaşam kalitesini artırma.',
-    image: '/images/mutfak.jpg',
+    image: imgMutfak,
   },
   {
     icon: '💻',
     title: 'Online Danışmanlık',
     desc: 'Nerede olursanız olun, video görüşme ile uzman diyetisyen desteği.',
-    image: '/images/saglikliyemek2.jpg',
+    image: imgSaglikliyemek2,
   },
 ];
 
