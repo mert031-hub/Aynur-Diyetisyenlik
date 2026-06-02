@@ -17,7 +17,7 @@ const services = [
     icon: '🩺',
     title: 'Obezite Yönetimi',
     desc: 'Medikal destekli, kapsamlı obezite tedavisi ve yaşam tarzı değişimi.',
-    image: '/images/diyet%20photo.jpg',
+    image: '/images/diyetphoto.jpg',
   },
   {
     icon: '🩸',
