@@ -112,14 +112,14 @@ export default function RootLayout({
   return (
     <html lang="tr" className={`${inter.variable} ${poppins.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
         <link rel="icon" href="/favicon.ico" />
         <meta name="theme-color" content="#7C9A75" />
       </head>
       <body className="font-body bg-background text-text antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
       </body>
     </html>
