@@ -18,7 +18,7 @@ export default function FloatingButtons() {
         href="https://wa.me/905388371509?text=Merhaba,%20randevu%20almak%20istiyorum."
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-[84px] right-4 md:bottom-6 md:right-6 z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl hover:bg-[#20BB5C] hover:scale-110 transition-all duration-200 whatsapp-pulse"
+        className="fixed bottom-[84px] right-4 md:bottom-6 md:right-6 z-40 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl hover:bg-[#20BB5C] hover:scale-110 transition-all duration-200 whatsapp-pulse"
         aria-label="WhatsApp ile iletişime geçin"
       >
         <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -30,7 +30,7 @@ export default function FloatingButtons() {
       {showScrollTop && (
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="fixed bottom-[152px] right-4 md:bottom-24 md:right-6 z-50 w-10 h-10 bg-white border border-gray-200 text-text-muted rounded-full flex items-center justify-center shadow-md hover:bg-background hover:text-primary hover:border-primary transition-all duration-200"
+          className="fixed bottom-[152px] right-4 md:bottom-24 md:right-6 z-40 w-10 h-10 bg-white border border-gray-200 text-text-muted rounded-full flex items-center justify-center shadow-md hover:bg-background hover:text-primary hover:border-primary transition-all duration-200"
           aria-label="Sayfanın başına git"
         >
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -40,7 +40,7 @@ export default function FloatingButtons() {
       )}
 
       {/* Mobile sticky CTA bar — hidden on md+ via Tailwind */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100 shadow-lg px-4 py-3 flex gap-3">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-gray-100 shadow-lg px-4 py-3 flex gap-3">
         <a
           href="tel:+905388371509"
           className="flex-1 flex items-center justify-center gap-2 min-h-[44px] py-2.5 bg-background border border-primary text-primary font-semibold rounded-xl text-sm"

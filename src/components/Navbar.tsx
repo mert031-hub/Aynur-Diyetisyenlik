@@ -21,9 +21,23 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
+
   const handleLinkClick = () => setIsMenuOpen(false);
 
   return (
+    <>
+    {/* Backdrop — covers page + floating buttons when mobile menu is open */}
+    {isMenuOpen && (
+      <div
+        className="fixed inset-0 bg-black/60 z-[45] lg:hidden"
+        onClick={handleLinkClick}
+        aria-hidden="true"
+      />
+    )}
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
@@ -144,6 +158,7 @@ export default function Navbar() {
         </div>
       </nav>
     </header>
+    </>
   );
 }
 
