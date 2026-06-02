@@ -5,7 +5,7 @@ const services = [
     icon: '⚖️',
     title: 'Kilo Verme Programı',
     desc: 'Metabolizmanıza özel, sürdürülebilir ve sağlıklı kilo verme planları.',
-    image: '/images/measuring-woman.jpg',
+    image: '/images/mezuralı kadın .jpg',
   },
   {
     icon: '💪',
@@ -41,7 +41,7 @@ const services = [
     icon: '🏃',
     title: 'Sporcu Beslenmesi',
     desc: 'Performansı artıran, toparlanmayı hızlandıran sporcu beslenme planları.',
-    image: '/images/healtymeal.jpg',
+    image: '/images/healthymeal.jpg',
   },
   {
     icon: '👶',

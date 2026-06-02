@@ -101,7 +101,7 @@ export default function Testimonials() {
         {/* Background image accent */}
         <div className="relative mb-12">
           <div className="absolute -top-4 -right-4 w-64 h-64 rounded-3xl overflow-hidden opacity-10 pointer-events-none">
-            <Image src="/images/smiling-client.jpg" alt="" fill className="object-cover" />
+            <Image src="/images/gülensurat.jpg" alt="" fill className="object-cover" />
           </div>
         </div>
 

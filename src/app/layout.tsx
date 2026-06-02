@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       'Kişisel beslenme programları ve bilimsel yaklaşımla sürdürülebilir sağlıklı yaşam. Afyonkarahisar\'ın en güvenilir diyetisyen kliniği.',
     images: [
       {
-        url: '/images/hero-woman.jpg',
+        url: '/images/diyetkadin.jpg',
         width: 1200,
         height: 630,
         alt: 'Aynur Kazak Diyetisyen',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Aynur Kazak | Uzman Diyetisyen – Afyonkarahisar',
     description: 'Kişisel beslenme programları ile sağlıklı ve sürdürülebilir bir yaşam için uzman diyetisyen danışmanlığı.',
-    images: ['/images/hero-woman.jpg'],
+    images: ['/images/diyetkadin.jpg'],
   },
   robots: {
     index: true,
@@ -101,7 +101,7 @@ const jsonLd = {
     bestRating: '5',
   },
   priceRange: '₺₺',
-  image: 'https://aynurkazakdiyetisyen.com/images/hero-woman.jpg',
+  image: 'https://aynurkazakdiyetisyen.com/images/diyetkadin.jpg',
 };
 
 export default function RootLayout({

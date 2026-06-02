@@ -18,7 +18,7 @@ export default function About() {
             {/* Main image */}
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/food-prep.jpg"
+                src="/images/dograma.jpg"
                 alt="Aynur Kazak - Uzman Diyetisyen"
                 width={600}
                 height={700}
@@ -45,7 +45,7 @@ export default function About() {
             {/* Small accent image */}
             <div className="absolute top-8 -right-4 lg:-right-10 z-20 w-28 h-28 rounded-2xl overflow-hidden shadow-lg border-4 border-white">
               <Image
-                src="/images/healthy-food.jpg"
+                src="/images/saglikliyemek.jpg"
                 alt="Sağlıklı beslenme"
                 width={120}
                 height={120}
