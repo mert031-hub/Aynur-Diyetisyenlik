@@ -97,7 +97,7 @@ export default function HowItWorks() {
 
                 {/* Image */}
                 <div className="flex-1">
-                  <div className="relative rounded-2xl overflow-hidden shadow-xl group w-full max-w-sm mx-auto">
+                  <div className="relative rounded-2xl overflow-hidden shadow-xl group w-full max-w-sm mx-auto bg-gray-100">
                     <Image
                       src={step.image}
                       alt={step.title}

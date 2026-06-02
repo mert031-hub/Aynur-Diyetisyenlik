@@ -105,7 +105,7 @@ export default function Services() {
               style={{ transitionDelay: `${(i % 4) * 80}ms` }}
             >
               {/* Image */}
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative h-40 overflow-hidden bg-gray-100">
                 <Image
                   src={service.image}
                   alt={service.title}

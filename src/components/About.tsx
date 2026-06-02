@@ -16,12 +16,13 @@ export default function About() {
           {/* Left: Images */}
           <div className="relative pb-8 lg:pb-0 reveal-left">
             {/* Main image */}
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl bg-gray-100">
               <Image
                 src="/images/diyetkadin2.jpg"
                 alt="Aynur Kazak - Uzman Diyetisyen"
                 width={600}
                 height={700}
+                priority
                 className="object-cover w-full h-[400px] sm:h-[500px] lg:h-[600px]"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
@@ -43,7 +44,7 @@ export default function About() {
             <div className="absolute top-1/2 -right-4 w-24 h-24 rounded-full bg-accent/30 -z-10" />
 
             {/* Small accent image — hidden on xs to prevent overflow */}
-            <div className="hidden sm:block absolute top-8 -right-4 lg:-right-10 z-20 w-28 h-28 rounded-2xl overflow-hidden shadow-lg border-4 border-white">
+            <div className="hidden sm:block absolute top-8 -right-4 lg:-right-10 z-20 w-28 h-28 rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-gray-100">
               <Image
                 src="/images/saglikliyemek.jpg"
                 alt="Sağlıklı beslenme"

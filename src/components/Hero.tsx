@@ -96,12 +96,14 @@ export default function Hero() {
           {/* Right: Floating card (visible on lg+) */}
           <div className="hidden lg:flex justify-end">
             <div className="relative">
-              <div className="w-80 xl:w-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40">
+              <div className="w-80 xl:w-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40 bg-gray-100">
                 <Image
                   src="/images/healthymeal2.jpg"
                   alt="Sağlıklı beslenme"
                   width={400}
                   height={500}
+                  priority
+                  sizes="(max-width: 1024px) 0px, 400px"
                   className="object-cover w-full h-[480px]"
                 />
               </div>
