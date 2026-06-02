@@ -120,8 +120,10 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`lg:hidden transition-all duration-300 overflow-hidden ${
-            isMenuOpen ? 'max-h-[500px] pb-4' : 'max-h-0'
+          className={`lg:hidden transition-all duration-300 ${
+            isMenuOpen
+              ? 'max-h-[calc(100vh-5rem)] overflow-y-auto pb-8'
+              : 'max-h-0 overflow-hidden'
           }`}
         >
           <div className="bg-white rounded-2xl shadow-lg p-4 mt-2 border border-primary/10">
