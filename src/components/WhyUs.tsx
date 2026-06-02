@@ -126,7 +126,7 @@ export default function WhyUs() {
           <div className="relative h-[600px] reveal-right hidden lg:block">
             <div className="absolute top-0 right-0 w-72 h-80 rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/diet-woman-2.jpg"
+                src="/images/dograma.jpg"
                 alt="Beslenme danışmanlığı"
                 fill
                 className="object-cover"
@@ -134,7 +134,7 @@ export default function WhyUs() {
             </div>
             <div className="absolute bottom-0 left-0 w-64 h-72 rounded-3xl overflow-hidden shadow-xl">
               <Image
-                src="/images/vegetables.jpg"
+                src="/images/buzdolabi.jpg"
                 alt="Sağlıklı sebzeler"
                 fill
                 className="object-cover"
@@ -142,7 +142,7 @@ export default function WhyUs() {
             </div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/water.jpg"
+                src="/images/su2.jpg"
                 alt="Su ve sağlık"
                 fill
                 className="object-cover"

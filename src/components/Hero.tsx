@@ -6,7 +6,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-woman.jpg"
+          src="/images/diyetkadin.jpg"
           alt="Aynur Kazak Uzman Diyetisyen"
           fill
           priority
@@ -98,7 +98,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-80 xl:w-96 rounded-3xl overflow-hidden shadow-2xl shadow-black/40">
                 <Image
-                  src="/images/healthy-meal-2.jpg"
+                  src="/images/healthymeal2.jpg"
                   alt="Sağlıklı beslenme"
                   width={400}
                   height={500}
