@@ -103,6 +103,7 @@ export default function HowItWorks() {
                       alt={step.title}
                       width={400}
                       height={300}
+                      loading="lazy"
                       className="object-cover w-full h-56 transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, 400px"
                     />

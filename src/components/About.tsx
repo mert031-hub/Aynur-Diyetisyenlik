@@ -50,6 +50,7 @@ export default function About() {
                 alt="Sağlıklı beslenme"
                 width={120}
                 height={120}
+                loading="lazy"
                 className="object-cover w-full h-full"
                 sizes="120px"
               />

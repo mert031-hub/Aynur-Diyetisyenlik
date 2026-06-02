@@ -129,6 +129,7 @@ export default function WhyUs() {
                 src="/images/dograma.jpg"
                 alt="Beslenme danışmanlığı"
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 1280px) 0px, 288px"
               />
@@ -138,6 +139,7 @@ export default function WhyUs() {
                 src="/images/buzdolabi.jpg"
                 alt="Sağlıklı sebzeler"
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 1280px) 0px, 256px"
               />
@@ -147,6 +149,7 @@ export default function WhyUs() {
                 src="/images/su2.jpg"
                 alt="Su ve sağlık"
                 fill
+                loading="lazy"
                 className="object-cover"
                 sizes="(max-width: 1280px) 0px, 208px"
               />
